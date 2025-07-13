@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Welcome from "./Welcom";
+import UserDetails from "./UserDetails";
+import Counter from "./Counter";
+import LikeCounter from "./LikeCounter";
+import FeedbackForm from "./FeedbackForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+function App(params) {
+  return(
+    <div>
+      <h1>Hello react</h1>
+      <Welcome/>
+      {/* <UserDetails name = "Gayantha" age = '26' location = "Nuwara eliya" />
+      <UserDetails name = "Sandeep" age = '24' location = "Bandrawela" /> */}
+      {/* <Counter/>
+      <LikeCounter/> */}
+      <FeedbackForm/>
+
     </div>
-  );
+  )
 }
+
 
 export default App;
